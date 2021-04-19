@@ -5,7 +5,7 @@
         <section class="container flex-container">
             <article class="card">
                 <div class="card-image">
-                    <img src="images/luis.jpeg" alt="luis">
+                    <img src="public/images/luis.jpeg" alt="luis">
                 </div>
 
                 <div class="card-content">
