@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Template project for php projects">
     <meta name="keywords" content="HTML, CSS, JavaScript, PHP">
     <meta name="author" content="Luis Guilherme Seidel">
+    <meta name="copyright" content="© <?= date("Y")?> Luis Guilherme Seidel" />
+    <meta name="robots" content="index,follow">
+    <meta name="revisit-after" content="15 days" />
 
-    <link rel="stylesheet" href="extensions/glider_js/glider.css">
-    <link rel="stylesheet" href="icons/fontawesome/all.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/reset.css">
+    <link rel="stylesheet" href="public/css/style.css">
     <title>Document</title>
 </head>
 <body>
 
     <header class="container">
-        
         <nav class="mobile-menu">
             <li class="haburger-menu">
                 <button onclick="openMenu()">
-                    <i class="fas fa-bars fa-lg"></i>
+                    <span class="material-icons md-24">face</span>
                 </button>
             </li>
 

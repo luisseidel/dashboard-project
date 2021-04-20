@@ -15,7 +15,7 @@
                 </a>
             </div>
             <div>
-                <a href="https://www.instagram.com/" target="_blank">
+                <a href="https://www.instagram.com/luisgseidel" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
@@ -36,11 +36,9 @@
                 <p>Lajeado - RS - Brazil</p>
             </address>
         </div>
-
+        <h1>Footer</h1>
     </footer>
 
-    <script src="js/main.js"></script>
-    <script src="extensions/glider_js/glider.js"></script>
-    <script src="icons/fontawesome/all.js"></script>
+    <script src="public/js/main.js"></script>
 </body>
 </html>

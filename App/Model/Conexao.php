@@ -9,7 +9,7 @@ class Conexao {
     public static function getConnection() {
 
         if (!isset(self::$instance)):
-            $host = 'mysql:host=localhost;port=3307;dbname=phpoo;charset=utf8';
+            $host = 'mysql:host=localhost;port=3306;dbname=phpoo;charset=utf8';
             $userName = 'root';
             $password = '';
 
