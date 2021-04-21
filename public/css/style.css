@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
 
-body {
+* {
     font: normal 16px/24px Open Sans;
     line-height: 1.5em;
 }
@@ -21,144 +21,148 @@ h4 { font-size: 25px; }
 h5 { font-size: 20px; }
 h6 { font-size: 18px; }
 
-
-/* MAIN STYLES */
-header, header a, header a:visited {
-    display: flex;
-    align-items: center;
+a {
+    outline: none;
+    cursor: pointer;
     color: white;
-}
-
-header, footer {
-    width: 100%;
-    color: white;
-    background-color: #1d1d1d;
 }
 
 main {
-    height: 100vh;
-    color: #1d1d1d;
-    background-color: lightgreen;
-}
-
-button, a {
-    cursor: pointer;
-}
-
-footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-footer div {
-    width: 33.33333%;
-    display: flex;
-    justify-content: center;
-}
-
-.mobile-menu {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    height: 100vh;
+    background-color: #666666;
 }
 
-.mobile-menu button {
-    background-color: transparent;
-    color: white;
-    outline: none;
-    border: none;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #1d1d1d;
-    overflow-x: hidden;
-    transition: ease-in-out 0.5s;
-}
-
-.sidenav-container {
-    padding: 20px;
-    width: 250px;
-}
-
-.sidenav button {
-    background-color: transparent;
-    color: white;
-    outline: none;
-    border: none;
-}
-
-.sidenav li {
-    margin: 10px;
-}
-
-.sidenav li a p {
-    margin-left: 10px;
-}
-
-.close-container {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.social-icons {
-    display: flex;
-}
-
-.social-icons div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    background-color: #478047;
-    border-radius: 100%;
-    margin: 10px;
-}
-
-.social-icons div a {
-    color: white;
+header {
+    background-color: #666666;
 }
 
 .flex-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
-.card {
-    margin: 15px;
-    border-radius: 6px;
-    box-shadow: 0 0 10px 1px #222;
+.sidenav-container {
+    padding: 10px;
 }
 
-.card-image img {
-    border-radius: 6px 6px 0 0;
-}
-
-.card-content {
-    padding: 20px;
-    margin-top: -10px;
-    background-color: #1d1d1d;
-    border-radius: 0 0 6px 6px;
+.sidenav {
+    background-color: black;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    visibility: hidden;
+    width: 0;
 }
 
-.card-content h4 {
-    margin: 10px 0;
+.sidenav-body {
+    display: flex;
+    flex-direction: column;
 }
 
-.card-content h5 {
-    margin: 5px 0;
+.sidenav-footer {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a89cc8;
 }
 
+.open {
+    height: 100vh;
+    width: 300px;
+    transition: width ease-in-out 1s;
+    visibility: visible;
+}
+
+.visible {
+    visibility: visible;
+    position: relative;
+}
+
+.hidden {
+    visibility: hidden;
+    position: absolute;
+}
+
+.closed {
+    width: 0;
+    transition: width ease-in-out 1s;
+    visibility: hidden;
+}
+
+.openMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.openMenu span {
+    color: black;
+}
+
+.menu-header {
+    height: 75px;
+}
+
+.menu-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.menu-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-item span {
+    margin: 5px;
+}
+
+.menu-item-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu-item-body {
+    display: flex;
+    flex-direction: column;
+    margin: 3px 20px;
+}
+
+.menu-item-body a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3px 20px;
+}
+
+.gira-seta {
+    transform: rotate(180deg);
+    transition: transform ease-in-out 0.5s;
+}
+
+.open-item {
+    height: 100%;
+    transition: height ease-in-out 0.5s;
+    visibility: visible;
+}
+
+.close-item {
+    height: 0;
+    transition: height ease-in-out 0.5s;
+    visibility: hidden;
+}
 
 @media screen and (min-width: 325px) and (max-width: 450px) {
     .container {
