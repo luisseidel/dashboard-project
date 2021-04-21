@@ -1,9 +1,14 @@
-<?php require_once 'App/View/includes/header.php';  ?>
+<?php
+require_once 'vendor/autoload.php';
+require_once 'App/View/includes/header.php';
 
-    <main class="container">
+use App\Core\Core;
 
-        <h1>Main</h1>
+$template = file_get_contents('App/View/pages/estrutura.php');
 
-    </main>
+$core = new Core();
+$core->start($_GET);
 
-<?php require_once 'App/View/includes/footer.php'; ?>
+echo $template;
+
+require_once 'App/View/includes/footer.php';
