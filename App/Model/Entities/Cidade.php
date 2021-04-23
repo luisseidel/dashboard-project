@@ -3,7 +3,7 @@
 
 namespace App\Model\Entities;
 
-use App\Model\Estado as Estado;
+use App\Model\Entities\Estado as Estado;
 
 class Cidade {
 

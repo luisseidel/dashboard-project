@@ -3,7 +3,7 @@
 
 namespace App\Model\Entities;
 
-use App\Model\Pais as Pais;
+use App\Model\Entities\Pais as Pais;
 
 class Estado {
 

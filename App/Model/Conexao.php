@@ -15,10 +15,9 @@ class Conexao {
 
             self::$instance = new \PDO($host, $userName, $password);
         endif;
+
         return self::$instance;
-
     }
-
 }
 
 ?>

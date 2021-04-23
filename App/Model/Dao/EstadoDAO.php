@@ -4,7 +4,7 @@
 namespace App\Model\Dao;
 
 use App\Model\Conexao;
-use App\Model\Estado as Estado;
+use App\Model\Entities\Estado as Estado;
 
 class EstadoDAO {
 
