@@ -51,11 +51,22 @@ class PaisDAO {
         $stmt -> execute();
     }
 
-    public function deleteById($id) {
-        $sql = 'DELETE FROM paises WHERE id = ?';
+    public function deleteById($ids) {
+        if (is_array($ids)) {
+            foreach ($ids as $id) {
+                $sql = 'DELETE FROM paises WHERE id in (?)';
+    
+                $stmt = Conexao::getConnection() -> prepare($sql);
+                $stmt -> bindValue(1, $id);
+                $stmt -> execute();
+            }
+            
+        } else {
+            $sql = 'DELETE FROM paises WHERE id = ?';
 
-        $stmt = Conexao::getConnection() -> prepare($sql);
-        $stmt -> bindValue(1, $id);
-        $stmt -> execute();
+            $stmt = Conexao::getConnection() -> prepare($sql);
+            $stmt -> bindValue(1, $ids);
+            $stmt -> execute();
+        }
     }
 }
