@@ -1,17 +1,23 @@
 <?php
 require_once 'vendor/autoload.php';
-require_once 'App/View/includes/header.php'; ?>
+require_once 'App/View/includes/header.php';?>
 
-    <main class="container">
-        
+<main class="container">
+    
+    <button>
+        inserir
+    </button>
 
-    </main>
+    <table>
+        <thead>
+            <th>One</th>
+        </thead>
+        <tbody>
+            <td>Andre</td>
+        </tbody>
+    </table>
+
+</main>
 
 <?php
-
-$paisDAO = new \App\Model\Dao\PaisDAO();
-
-$arr = $paisDAO->read();
-
-
 require_once 'App/View/includes/footer.php'; ?>

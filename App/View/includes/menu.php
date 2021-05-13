@@ -5,14 +5,14 @@
   <nav id="sidebar" class="sidebar-wrapper">
     <div class="sidebar-content">
       <div class="sidebar-brand">
-        <a href="#">pro sidebar</a>
         <div id="close-sidebar">
           <i class="fas fa-times"></i>
         </div>
       </div>
       <div class="sidebar-header">
         <div class="user-pic">
-          <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg" alt="User picture">
+          <img class="img-responsive img-rounded" 
+               src="https://avatars.githubusercontent.com/u/39092706?v=4" alt="User picture">
         </div>
         <div class="user-info">
           <span class="user-name">Luis
@@ -44,40 +44,33 @@
           <li class="header-menu">
             <span>General</span>
           </li>
-          <li class="sidebar-dropdown">
+          <li>
             <a href="#">
               <i class="fa fa-tachometer-alt"></i>
               <span>Dashboard</span>
             </a>
-            <div class="sidebar-submenu">
-              <ul>
-                <li>
-                  <a href="#">Dashboard 1</a>
-                </li>
-                <li>
-                  <a href="#">Dashboard 2</a>
-                </li>
-                <li>
-                  <a href="#">Dashboard 3</a>
-                </li>
-              </ul>
-            </div>
           </li>
           <li class="sidebar-dropdown">
             <a href="#">
-              <i class="fa fa-shopping-cart"></i>
-              <span>E-commerce</span>
+              <i class="fas fa-pen"></i>
+              <span>Cadastros</span>
             </a>
             <div class="sidebar-submenu">
               <ul>
                 <li>
-                  <a href="#">Products</a>
+                  <a href="#">Países</a>
                 </li>
                 <li>
-                  <a href="#">Orders</a>
+                  <a href="#">Estados</a>
                 </li>
                 <li>
-                  <a href="#">Credit cart</a>
+                  <a href="#">Cidades</a>
+                </li>
+                <li>
+                  <a href="#">Grupo Pessoas</a>
+                </li>
+                <li>
+                  <a href="#">Pessoas</a>
                 </li>
               </ul>
             </div>
@@ -90,27 +83,15 @@
             <div class="sidebar-submenu">
               <ul>
                 <li>
-                  <a href="#">General</a>
-                </li>
-                <li>
-                  <a href="#">Panels</a>
-                </li>
-                <li>
-                  <a href="#">Tables</a>
-                </li>
-                <li>
-                  <a href="#">Icons</a>
-                </li>
-                <li>
-                  <a href="#">Forms</a>
-                </li>
+                  <a href="App/View/pages/git-data.php">Github data</a>
+                </li> 
               </ul>
             </div>
           </li>
           <li class="sidebar-dropdown">
             <a href="#">
               <i class="fa fa-chart-line"></i>
-              <span>Charts</span>
+              <span>Relatórios</span>
             </a>
             <div class="sidebar-submenu">
               <ul>

@@ -26,6 +26,11 @@ a {
     cursor: pointer;
 }
 
+.flex-container {
+    display: flex;
+    padding: 0 15%;
+}
+
 @media screen and (min-width: 325px) and (max-width: 450px) {
     .container {
         padding: 5% 5%;
